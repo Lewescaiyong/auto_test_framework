@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestBed>
+	<GlobalConfig ReportFile="" TaskType="sanity" TestType="no_piling"/>
+	<MicroWIN Features="" Version=""/>
+	<PLCs>
+		<PLC id="1">
+			<PLCInfo CPUType="ST30" PLCIp="192.168.2.11" Version=""/>
+		</PLC>
+		<PLC id="2">
+			<PLCInfo CPUType="SR30" PLCIp="192.168.2.12" Version=""/>
+		</PLC>
+	</PLCs>
+</TestBed>

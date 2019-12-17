@@ -1,0 +1,17 @@
+version: 1
+formatters:
+    simple:
+        format: "[%(asctime)s]: %(message)s"
+    complex:
+        format: .......
+handlers:
+    console:
+        class: logging.StreamHandler
+        formatter: complex
+        level: DEBUG
+    do_nothing:
+        class: logging.NullHandler
+
+loggers:
+    root:
+        handlers: [do_nothing]

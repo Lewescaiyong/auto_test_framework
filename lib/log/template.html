@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="fish">
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/all.min.css" rel="stylesheet">
+    <link href="static/css/bootstrap-table.css" rel="stylesheet">
+
+    <script src="static/js/all.js"></script>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap-table.js"></script>
+    <script src="static/js/bootstrap-table-locale-all.min.js"></script>
+
+    <style>
+        th {
+            font-size: 1.5rem;
+        }
+        td {
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
+        }
+    </style>
+
+</head>
+<body>
+<div id="main" class="m-4">
+    <main role="main" id="ssh-main">
+        <div class="main-div d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 border-bottom">
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                </div>
+            </div>
+            <h1 class="h2 m-2"><strong>{execute_result}</strong></h1>
+        </div>
+        <div class="table-responsive">
+            <table id="log-table"
+                   class="table table-hover table-bordered table-condensed table-no-bordered"
+                   data-toggle="table"
+                   data-locale="zh-CN"
+                   data-sticky-header="true"
+                   data-icon-size="sm"
+                   data-detail-view="false"
+                   data-detail-formatter="detailFormatter"
+                   data-page-size="50"
+                   data-click-to-select="true"
+                   data-pagination="true"
+                   data-falign="center"
+                   data-id-field="id"
+                   data-search="true"
+                   data-sort-name="id"
+                   data-sort-order="desc"
+                   data-unique-id="id"
+                   data-page-list="[50, 100, 500]">
+                <thead>
+                <tr>
+                    <th data-align="center" data-field="Date" data-width="230px">Date</th>
+                    <th data-align="center" data-field="ThreadId" data-width="52px">ThreadId</th>
+                    <th data-align="center" data-field="Level" data-width="52px">Level</th>
+                    <th data-align="left" data-field="Detail" data-formatter="detailFormatter">Detail </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+<script>
+    function detailFormatter(value, row) {
+        if (row.Level === "ERROR"){
+            return '<div class="card border-danger mb-0"><div class="card-body text-danger p-1"><p class="card-text"><strong>' +
+                    value + '</strong></p></div></div>'
+        }
+        else if (row.Level === "WARNING"){
+            return '<div class="card border-warning mb-0"><div class="card-body text-warning p-1"><p class="card-text"><strong>' +
+                    value + '</strong></p></div></div>'
+        }
+
+        return '<div class="card border-success mb-0"><div class="card-body text-success p-1"><p class="card-text">' +
+                    value + '</p></div></div>'
+    }
+
+    $(document).ready(function () {
+        let data = {log_data};
+        $("#log-table").bootstrapTable('load', data);
+    });
+</script>
+</html>

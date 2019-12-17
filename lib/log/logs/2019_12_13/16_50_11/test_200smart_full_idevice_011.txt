@@ -1,0 +1,194 @@
+[2019-12-13 16:50:11,184-3992-INFO]: Start executing the test case: [test_200smart_full_idevice_011]
+[2019-12-13 16:50:11,184-3992-INFO]: 
+                                 In prepare...
+[2019-12-13 16:50:11,184-3992-INFO]: Params: {'strErrMsg': 'communication module start error'}.
+[2019-12-13 16:50:11,184-3992-INFO]: Wrapper name: test_env_init
+[2019-12-13 16:50:11,402-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,402-3992-INFO]: Params: {}.
+[2019-12-13 16:50:11,402-3992-INFO]: Wrapper name: load_instruction_libs
+[2019-12-13 16:50:11,636-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,636-3992-INFO]: Params: {'ipAddress': '192.168.2.11', 'subNetMask': '255.255.255.0', 'errorMsg': ''}.
+[2019-12-13 16:50:11,636-3992-INFO]: Wrapper name: create_session
+[2019-12-13 16:50:11,777-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,777-3992-INFO]: Preconditions:
+[2019-12-13 16:50:11,777-3992-INFO]: 1. Open Micro/WIN V2.5;  
+[2019-12-13 16:50:11,777-3992-INFO]: 2. Connect to a plc with V2.5 FW;
+[2019-12-13 16:50:11,777-3992-INFO]: 3. select plc role as "I-Device";
+[2019-12-13 16:50:11,777-3992-INFO]: Params: {'pProjectPath': 'D:\\project\\smart200\\lib\\resource\\project\\new_20191213_165011.smart', 'pEntryPoint': 'MWSMART', 'hMWinProject': 1, 'rstrType': '', 'rstrVersion': ''}.
+[2019-12-13 16:50:11,777-3992-INFO]: Wrapper name: project_new
+[2019-12-13 16:50:11,777-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,777-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,777-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,777-3992-INFO]: Params: {}.
+[2019-12-13 16:50:11,777-3992-INFO]: Wrapper name: project_init
+[2019-12-13 16:50:11,777-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,777-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,855-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,855-3992-INFO]: Params: {'rData': {}}.
+[2019-12-13 16:50:11,855-3992-INFO]: Wrapper name: get_system_block_data
+[2019-12-13 16:50:11,855-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,855-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,855-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,855-3992-INFO]: Params: {'rElement': 0}.
+[2019-12-13 16:50:11,855-3992-INFO]: Wrapper name: get_system_block_element_data
+[2019-12-13 16:50:11,855-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,855-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,855-3992-INFO]: Params: {'rData': {'cpu': {'cpu_type': 'CPU ST30 (DC/DC/DC)'}, 'obj': <lib.wrapper.integration_mw.source.MicroWinExecInterface.SDBData; proxy of <Swig Object of type 'SDBData *' at 0x03FAA9E0> >}}.
+[2019-12-13 16:50:11,855-3992-INFO]: Wrapper name: set_system_block_data
+[2019-12-13 16:50:11,855-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,855-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,855-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,855-3992-INFO]: Params: {'pErrorCount': 0, 'pWarningCount': 0}.
+[2019-12-13 16:50:11,855-3992-INFO]: Wrapper name: validate_system_block
+[2019-12-13 16:50:11,855-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,855-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,855-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,870-3992-INFO]: 
+                                 In process...
+[2019-12-13 16:50:11,870-3992-INFO]: Step actions:
+[2019-12-13 16:50:11,870-3992-INFO]: 1. Select "Fixed IP address and name", input valid ip and name, add some transfer areas, generate, View the "Communication" in system block;
+[2019-12-13 16:50:11,870-3992-INFO]: Params: {'rData': {}}.
+[2019-12-13 16:50:11,870-3992-INFO]: Wrapper name: get_system_block_data
+[2019-12-13 16:50:11,870-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,870-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,870-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,870-3992-INFO]: Params: {'rElement': 0}.
+[2019-12-13 16:50:11,870-3992-INFO]: Wrapper name: get_system_block_element_data
+[2019-12-13 16:50:11,870-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,870-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,870-3992-INFO]: Params: {'plcRole': 4, 'isFixedIP': True, 'plcIP': '192.168.2.11', 'plcName': 'idevice11', 'startupTime': 10000, 'strType': 'ST30', 'strVer': <Swig Object of type 'CString *' at 0x04F71EC0>, 'subNetMask': '255.255.255.0', 'paraDisallowed': False}.
+[2019-12-13 16:50:11,870-3992-INFO]: Wrapper name: pn_set_network_info
+[2019-12-13 16:50:11,870-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,870-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,870-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,870-3992-INFO]: Params: {'subslotNubmer': 1000, 'ioType': 1, 'address': 1152, 'length': 1}.
+[2019-12-13 16:50:11,870-3992-INFO]: Wrapper name: add_transfer_area_to_i_device
+[2019-12-13 16:50:11,870-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,870-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,870-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,870-3992-INFO]: Params: {'subslotNubmer': 1001, 'ioType': 2, 'address': 1152, 'length': 1}.
+[2019-12-13 16:50:11,870-3992-INFO]: Wrapper name: add_transfer_area_to_i_device
+[2019-12-13 16:50:11,870-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,870-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,870-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,870-3992-INFO]: Params: {'rData': {}}.
+[2019-12-13 16:50:11,870-3992-INFO]: Wrapper name: get_system_block_data
+[2019-12-13 16:50:11,870-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,870-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,870-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,886-3992-INFO]: Params: {'rElement': 0}.
+[2019-12-13 16:50:11,886-3992-INFO]: Wrapper name: get_system_block_element_data
+[2019-12-13 16:50:11,886-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,886-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,886-3992-INFO]: Params: {'rData': {'cpu': {'cpu_type': 'CPU ST30 (DC/DC/DC)'}, 'obj': <lib.wrapper.integration_mw.source.MicroWinExecInterface.SDBData; proxy of <Swig Object of type 'SDBData *' at 0x0207CE00> >}}.
+[2019-12-13 16:50:11,886-3992-INFO]: Wrapper name: set_system_block_data
+[2019-12-13 16:50:11,886-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,886-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,886-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,886-3992-INFO]: Params: {'pErrorCount': 0, 'pWarningCount': 0}.
+[2019-12-13 16:50:11,886-3992-INFO]: Wrapper name: validate_system_block
+[2019-12-13 16:50:11,886-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,886-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,886-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,886-3992-INFO]: Params: {'rData': 0}.
+[2019-12-13 16:50:11,886-3992-INFO]: Wrapper name: pn_get_configuration
+[2019-12-13 16:50:11,886-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,886-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,886-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,886-3992-INFO]: Params: {'rData': <lib.wrapper.integration_mw.source.MicroWinExecInterface.EX_PNWizardData; proxy of <Swig Object of type 'EX_PNWizardData *' at 0x0207CE00> >, 'targetErrorObject': ''}.
+[2019-12-13 16:50:11,886-3992-INFO]: Wrapper name: validate_wizard_pn
+[2019-12-13 16:50:11,886-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,886-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,886-3992-INFO]: Wizard validation result: {'rData': <lib.wrapper.integration_mw.source.MicroWinExecInterface.EX_PNWizardData; proxy of <Swig Object of type 'EX_PNWizardData *' at 0x0207CE00> >, 'targetErrorObject': <Swig Object of type 'CString *' at 0x04F71D40>, 'code': 0}
+[2019-12-13 16:50:11,886-3992-INFO]: Params: {'isShowMsgBox': False}.
+[2019-12-13 16:50:11,886-3992-INFO]: Wrapper name: pn_config_complete
+[2019-12-13 16:50:11,886-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,886-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,901-3992-INFO]: Interface called successfully.
+[2019-12-13 16:50:11,901-3992-INFO]: Params: {'rData': 0}.
+[2019-12-13 16:50:11,901-3992-INFO]: Wrapper name: pn_get_configuration
+[2019-12-13 16:50:11,901-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:50:11,901-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:50:11,901-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,642-3992-INFO]: Params: {'rData': {}}.
+[2019-12-13 16:51:45,642-3992-INFO]: Wrapper name: get_system_block_data
+[2019-12-13 16:51:45,642-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,642-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,642-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,642-3992-INFO]: Params: {'rElement': 0}.
+[2019-12-13 16:51:45,642-3992-INFO]: Wrapper name: get_system_block_element_data
+[2019-12-13 16:51:45,642-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,642-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,642-3992-INFO]: Params: {'plcRole': 4, 'isFixedIP': False, 'plcIP': '192.168.2.11', 'plcName': 'idevice11', 'startupTime': 10000, 'strType': 'ST30', 'strVer': <Swig Object of type 'CString *' at 0x04FB0488>, 'subNetMask': '255.255.255.0', 'paraDisallowed': False}.
+[2019-12-13 16:51:45,642-3992-INFO]: Wrapper name: pn_set_network_info
+[2019-12-13 16:51:45,642-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,642-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,642-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,642-3992-INFO]: Params: {'rData': {}}.
+[2019-12-13 16:51:45,642-3992-INFO]: Wrapper name: get_system_block_data
+[2019-12-13 16:51:45,642-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,642-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,642-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,642-3992-INFO]: Params: {'rElement': 0}.
+[2019-12-13 16:51:45,642-3992-INFO]: Wrapper name: get_system_block_element_data
+[2019-12-13 16:51:45,642-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,642-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,642-3992-INFO]: Params: {'rData': {'cpu': {'cpu_type': 'CPU ST30 (DC/DC/DC)'}, 'obj': <lib.wrapper.integration_mw.source.MicroWinExecInterface.SDBData; proxy of <Swig Object of type 'SDBData *' at 0x04FB0470> >}}.
+[2019-12-13 16:51:45,658-3992-INFO]: Wrapper name: set_system_block_data
+[2019-12-13 16:51:45,658-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,658-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,658-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,658-3992-INFO]: Params: {'pErrorCount': 0, 'pWarningCount': 0}.
+[2019-12-13 16:51:45,658-3992-INFO]: Wrapper name: validate_system_block
+[2019-12-13 16:51:45,658-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,658-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,658-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,658-3992-INFO]: Params: {'rData': 0}.
+[2019-12-13 16:51:45,658-3992-INFO]: Wrapper name: pn_get_configuration
+[2019-12-13 16:51:45,658-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,658-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,658-3992-INFO]: Interface called successfully.
+[2019-12-13 16:51:45,658-3992-INFO]: Params: {'rData': <lib.wrapper.integration_mw.source.MicroWinExecInterface.EX_PNWizardData; proxy of <Swig Object of type 'EX_PNWizardData *' at 0x04FB0458> >, 'targetErrorObject': ''}.
+[2019-12-13 16:51:45,658-3992-INFO]: Wrapper name: validate_wizard_pn
+[2019-12-13 16:51:45,658-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,658-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,658-3992-INFO]: Wizard validation result: {'rData': <lib.wrapper.integration_mw.source.MicroWinExecInterface.EX_PNWizardData; proxy of <Swig Object of type 'EX_PNWizardData *' at 0x04FB0458> >, 'targetErrorObject': <Swig Object of type 'CString *' at 0x04FB0500>, 'code': 0}
+[2019-12-13 16:51:45,658-3992-INFO]: Params: {'isShowMsgBox': False}.
+[2019-12-13 16:51:45,658-3992-INFO]: Wrapper name: pn_config_complete
+[2019-12-13 16:51:45,658-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:51:45,658-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:51:45,673-3992-INFO]: Interface called successfully.
+[2019-12-13 16:52:02,178-3992-INFO]: Params: {'rData': 0}.
+[2019-12-13 16:52:02,178-3992-INFO]: Wrapper name: pn_get_configuration
+[2019-12-13 16:52:02,178-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:52:02,178-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:52:02,178-3992-INFO]: Interface called successfully.
+[2019-12-13 16:52:54,859-3992-INFO]: Params: {'EditorType': 'S7_LAD'}.
+[2019-12-13 16:52:54,859-3992-INFO]: Wrapper name: project_set_editor
+[2019-12-13 16:52:54,859-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:52:54,859-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:52:54,859-3992-INFO]: Interface called successfully.
+[2019-12-13 16:52:54,859-3992-INFO]: Params: {'rErrorCount': 0, 'rSize': 0, 'bReLoad': True}.
+[2019-12-13 16:52:54,859-3992-INFO]: Wrapper name: project_compile
+[2019-12-13 16:52:54,859-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:52:54,859-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:52:54,859-3992-INFO]: Interface called successfully.
+[2019-12-13 16:52:54,859-3992-INFO]: Params: {'pProjectPath': 'D:\\project\\smart200\\lib\\resource\\project\\new_20191213_165011.smart'}.
+[2019-12-13 16:52:54,859-3992-INFO]: Wrapper name: project_save_as
+[2019-12-13 16:52:54,859-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:52:54,859-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:52:54,859-3992-INFO]: Interface called successfully.
+[2019-12-13 16:53:16,902-3992-INFO]: Params: {'rData': 0}.
+[2019-12-13 16:53:16,902-3992-INFO]: Wrapper name: pn_get_configuration
+[2019-12-13 16:53:16,902-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:53:16,902-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:53:16,902-3992-INFO]: Interface called successfully.
+[2019-12-13 16:53:29,070-3992-INFO]: Params: {'rData': {}}.
+[2019-12-13 16:53:29,070-3992-INFO]: Wrapper name: get_system_block_data
+[2019-12-13 16:53:29,070-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:53:29,070-3992-INFO]: Current connected PLC: 192.168.2.11
+[2019-12-13 16:53:29,070-3992-INFO]: Interface called successfully.
+[2019-12-13 16:53:29,070-3992-INFO]: Params: {'rElement': 0}.
+[2019-12-13 16:53:29,070-3992-INFO]: Wrapper name: get_system_block_element_data
+[2019-12-13 16:53:29,070-3992-DEBUG]: The current connection is already with plc[192.168.2.11]
+[2019-12-13 16:53:29,070-3992-INFO]: Current connected PLC: 192.168.2.11

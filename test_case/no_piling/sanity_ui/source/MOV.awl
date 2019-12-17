@@ -1,0 +1,44 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=Program Comments
+BEGIN
+Network 1 
+// Network Comment
+LD     SM0.0
+=      L60.0
+LD     SM0.0
+=      L63.7
+LD     L60.0
+CALL   SBR1, L63.7, 1000, 500, VB100
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=Subroutine Comments
+BEGIN
+Network 1 
+// Network Comment
+LDN    I0.0
+=      L60.0
+LD     M0.0
+=      L63.7
+LD     L60.0
+CALL   SBR1, L63.7, 1000, 50, VB100
+END_SUBROUTINE_BLOCK
+SUBROUTINE_BLOCK PWM0_RUN:SBR1
+TITLE=
+VAR_INPUT
+RUN:BOOL;
+Cycle:WORD;
+Pulse:WORD;
+END_VAR
+VAR_OUTPUT
+Error:BYTE;
+END_VAR
+BEGIN
+Network 1 // This POU is password-protected against editing and viewing.
+
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=Interrupt routine comments
+BEGIN
+Network 1 
+// Network Comment
+END_INTERRUPT_BLOCK
